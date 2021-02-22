@@ -1,0 +1,46 @@
+//Colors
+$bg-one: #f7f7f7;
+$bg-two: #aaa;
+$bg-three: #113355;
+
+$color-one: #113355;
+$color-two: #aaa;
+$color-three: #f7f7f7;
+
+//Fonts
+$menu: 18px;
+
+//utility
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    color: $bg-three;
+    background-color: $bg-one;
+    font-family: 'Nunito', sans-serif;
+}
+.container{
+    max-width: 1170px;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+.position-fix {
+    position: fixed;
+}
+.top-right {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+}
+.active{
+    border-bottom: 2px solid $color-two;
+}
+input{
+    border: none;
+}
+
+
+

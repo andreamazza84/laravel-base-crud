@@ -1,0 +1,141 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito);* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  color: #113355;
+  background-color: #f7f7f7;
+  font-family: "Nunito", sans-serif;
+}
+
+.container {
+  max-width: 1170px;
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+
+.position-fix {
+  position: fixed;
+}
+
+.top-right {
+  position: absolute;
+  right: 10px;
+  top: 18px;
+}
+
+.active {
+  border-bottom: 2px solid #aaa;
+}
+
+input {
+  border: none;
+}
+
+#header {
+  height: 80px;
+  background-color: #113355;
+  color: #aaa;
+}
+
+#main {
+  min-height: calc(100vh - 80px);
+  background-color: #f7f7f7;
+  color: #113355;
+}
+
+#footer {
+  height: 400px;
+  background-color: #aaa;
+  color: #113355;
+}
+
+#header {
+  display: flex;
+}
+
+#header .menu {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  align-items: center;
+}
+
+#header .menu-left {
+  justify-content: flex-start;
+  padding-left: 30px;
+}
+
+#header .menu-right {
+  justify-content: flex-end;
+}
+
+#header .menu-right li {
+  list-style: none;
+  margin-right: 30px;
+}
+
+#header .menu-right li a {
+  display: block;
+  color: #aaa;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Nunito", sans-serif;
+  border-bottom: 2px solid transparent;
+}
+
+#header .menu-right li a:hover {
+  border-bottom: 2px solid #aaa;
+}
+
+#main .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px 20px;
+  margin: 30px 0;
+  background-color: antiquewhite;
+}
+
+#main .card .content {
+  text-align: justify;
+  line-height: 1.5;
+}
+
+#main .card .title {
+  font-size: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.form {
+  margin-bottom: 10px;
+}
+
+.form label {
+  display: block;
+}
+
+.form label input {
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-bottom: 30px;
+}
+

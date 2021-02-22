@@ -1,0 +1,21 @@
+.form{
+    margin-bottom: 10px;
+    label{
+        display: block;
+        input{
+            border: 1px solid #aaa;
+            border-radius: 5px;
+            padding: 5px;
+            margin-bottom: 20px;
+        }
+    }
+}
+.btn{
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-bottom: 30px;
+}

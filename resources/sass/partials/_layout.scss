@@ -1,0 +1,74 @@
+//Struttura
+#header{
+    height: 80px;
+    background-color: $bg-three;
+    color: $color-two;
+}
+#main{
+    min-height: calc(100vh - 80px);
+    background-color: $bg-one;
+    color: $color-one;
+}
+#footer{
+    height: 400px;
+    background-color: $bg-two;
+    color: $color-one;    
+}
+
+//#Header
+#header{
+    display: flex;
+    .menu{
+        display: flex;
+        width: 50%;
+        height: 100%;
+        align-items: center;
+    }
+    .menu-left{
+        justify-content: flex-start;
+        padding-left: 30px;
+    }
+    .menu-right{
+        justify-content: flex-end;
+        li{
+            list-style: none;
+            margin-right: 30px;
+            a{
+                display: block;
+                color: $color-two;
+                text-decoration: none;
+                font-size: $menu;
+                font-weight: 600;
+                font-family: 'Nunito', sans-serif;
+                border-bottom: 2px solid transparent;
+                &:hover{
+                    border-bottom: 2px solid $color-two;
+                }
+                // .active{
+                //     border-bottom: 2px solid $color-two;
+                // }
+            }
+        }
+    }
+}
+
+#main{
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 30px 20px;
+        margin: 30px 0;
+        background-color: antiquewhite;
+        .content {
+            text-align: justify;
+            line-height: 1.5;
+        }
+        .title {
+            font-size: 40px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+    }
+}
