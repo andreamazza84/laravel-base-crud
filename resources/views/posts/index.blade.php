@@ -32,7 +32,7 @@
                     <td>{{ $post->created_at }}</td>
                     <td>
                         <a class="btn" href="{{ route('posts.show', $post->id) }}">View</a>
-                        <a class="btn" href="">Edit</a>
+                        <a class="btn" href="{{ route('posts.edit', $post->id) }}">Edit</a>
                         <form action="" method="get">
                             <input class="btn" type="submit" value="Delete">
                         </form>

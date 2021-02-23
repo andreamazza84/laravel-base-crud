@@ -66,7 +66,7 @@ class MainController extends Controller
      */
     public function edit(Post $post)
     {
-        //
+        return view('posts.edit', compact('post'));
     }
 
     /**
@@ -78,7 +78,10 @@ class MainController extends Controller
      */
     public function update(Request $request, Post $post)
     {
-        //
+        $data = $request -> all();
+        $post->update($data);
+
+        return redirect()->route('posts.show', $post);
     }
 
     /**
