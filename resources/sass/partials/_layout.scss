@@ -44,9 +44,9 @@
                 &:hover{
                     border-bottom: 2px solid $color-two;
                 }
-                // .active{
-                //     border-bottom: 2px solid $color-two;
-                // }
+                .active{
+                     border-bottom: 2px solid $color-two;
+                }
             }
         }
     }

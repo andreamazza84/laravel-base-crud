@@ -10,7 +10,7 @@
 <body>
     <div class="container">
 
-        <h1>Admin | All posts</h1>
+        <h1 class="title">Admin | All posts</h1>
         <a class="btn" href="{{ route('posts.create') }}">Create a new post</a>
     
         <table>
@@ -31,12 +31,12 @@
                     <td class="body">{{ $post->body }}</td>
                     <td>{{ $post->created_at }}</td>
                     <td>
-                        <a class="btn" href="{{ route('posts.show', $post->id) }}">View</a>
-                        <a class="btn" href="{{ route('posts.edit', $post->id) }}">Edit</a>
+                        <a class="btn green" href="{{ route('posts.show', $post->id) }}">View</a>
+                        <a class="btn blue" href="{{ route('posts.edit', $post->id) }}">Edit</a>
                         <form action="{{ route('posts.destroy', $post->id) }}" method="post">
                             @csrf
                             @method('DELETE')
-                            <input class="btn" type="submit" value="Delete">
+                            <input class="btn red" type="submit" value="Delete">
                         </form>
 
                     </td>
