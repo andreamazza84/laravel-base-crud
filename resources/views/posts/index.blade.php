@@ -4,33 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <title>Lista di tutti i post</title>
-    <style>
-        html, body{
-            background-color: #f1f1f1;
-            color: #333;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        .container{
-            width: 90%;
-            margin: auto;
-        }
-        table{
-            border: 1px solid #aaa;
-        }
-        td{
-            padding: 2px;
-        }
-        .btn{
-            display: inline-block;
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            border-radius: 5px;
-            text-decoration: none;
-            margin-bottom: 30px;
-        }
-    </style>
 </head>
 <body>
     <div class="container">
@@ -56,7 +31,7 @@
                     <td class="body">{{ $post->body }}</td>
                     <td>{{ $post->created_at }}</td>
                     <td>
-                        <a class="btn" href="">View</a>
+                        <a class="btn" href="{{ route('posts.show', $post->id) }}">View</a>
                         <a class="btn" href="">Edit</a>
                         <form action="" method="get">
                             <input class="btn" type="submit" value="Delete">

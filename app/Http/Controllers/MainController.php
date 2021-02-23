@@ -54,7 +54,7 @@ class MainController extends Controller
      */
     public function show(Post $post)
     {
-        return view('posts.create');
+        return view('posts.show', compact('post'));
     }
 
     /**
