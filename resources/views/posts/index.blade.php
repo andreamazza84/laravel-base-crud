@@ -33,7 +33,9 @@
                     <td>
                         <a class="btn" href="{{ route('posts.show', $post->id) }}">View</a>
                         <a class="btn" href="{{ route('posts.edit', $post->id) }}">Edit</a>
-                        <form action="" method="get">
+                        <form action="{{ route('posts.destroy', $post->id) }}" method="post">
+                            @csrf
+                            @method('DELETE')
                             <input class="btn" type="submit" value="Delete">
                         </form>
 
