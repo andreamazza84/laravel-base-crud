@@ -40,9 +40,10 @@ class MainController extends Controller
         //dd($request);
         $post = new Post;
         $post->title = request('title');
-        $post->body = request('title');
+        $post->body = request('body');
         $post->save();
-        
+
+        $post = Post::orderBy('id')->first();
         return redirect()->route('posts.index');
     }
 

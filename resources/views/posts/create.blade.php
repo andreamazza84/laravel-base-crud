@@ -12,6 +12,7 @@
         <h1>Create a new post</h1>
         <form action="{{ route('posts.store') }}" method="post">
             @csrf
+            @method('POST')
             <div class="form title">
                 <label for="title">Title</label>
                 <input type="text" name="title" id="title">
